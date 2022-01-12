@@ -1,6 +1,260 @@
-/* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
+
+/* default class */
 body {
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #F3F1FF;
+
+    /* container equivelent */
+    /* width: 1440px;
+    margin: 0 auto; */
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* idea header */
+.nav__bar {
+    background-color: #562EFF;
+    box-sizing: border-box;
+    padding: 0 10px;
+    /* width: 1155px; */
+    /* margin: 0 auto; */
+}
+
+.nav__bar nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__bar nav span:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 7.5%;
+    justify-content: space-between;
+}
+
+.nav__bar nav span:first-child img {
+    height: 51px;
+    width: 40.42px;
+    cursor: pointer;
+}
+
+.nav__bar nav span:first-child p {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav__bar nav span:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.nav_menu a {
+    color: #ffffff;
+}
+
+.dp_img img {
+    cursor: pointer;
+}
+
+/* rectangle, top player */
+.rectangle__256:first-child {
+    width: 870px;
+    margin: 36px auto 0px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 33px;
+    box-sizing: border-box;
+}
+
+.rectangle__256:first-child>p {
+    color: #562EFF;
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.top__player {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+}
+
+.top__player a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top__player a img {
+    height: 56px;
+    width: 56px;
+    margin-right: 8px;
+}
+
+.top__player a p {
+    margin: 0 0 0 8px;
+    color: black;
+}
+
+/* separator line */
+hr#sec_ruler {
+    margin: 30px 0;
+    border: 1px solid #d1d1d1;
+}
+
+/* rectangle, top blog */
+.top__blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+}
+
+.top__blog a {
+    display: flex;
+    flex-direction: row;
+}
+
+.top__blog a img {
+    width: 177px;
+    height: 117px;
+}
+
+.top__blog a article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.top__blog a article>p {
+    margin: 0;
+    color: black;
+    margin-top: 5px;
+}
+
+.top__blog a article p:last-child .blog_by {
+    font-size: 14px;
+    color: #9f9f9f;
+}
+
+.top__blog a article p:last-child .blog_author {
+    font-size: 14px;
+    color: #562EFF;
+}
+
+/* rectangle, latest course */
+.rectangle__256:last-child {
+    width: 870px;
+    margin: 36px auto 0px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 33px;
+    box-sizing: border-box;
+}
+
+.rectangle__256:last-child>p {
+    color: #562EFF;
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.latest__course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+}
+
+.latest__course a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 13px 17px 13px 11px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 5px 1px rgba(171, 171, 171, 0.75);
+}
+
+.latest__course a .course_box .course_logo img {
+    width: 224px;
+    height: 104px;
+}
+
+.latest__course a .course_box .course_logo .course_intro p:first-child {
+    color: black;
+    margin-bottom: 0;
+}
+
+.latest__course a .course_box .course_logo .course_intro p:last-child {
+    color: #ED6B4F;
+    font-size: 12px;
+}
+
+.course_segment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.rating_star i {
+    color: #ffc014;
+}
+
+.rating_amount {
+    margin: 0;
+    color: black;
+}
+
+.time_stamp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    background-color: #ED6B4F66;
+    color: #ED6B4F;
+    border-radius: 15px;
+}
+
+.time_stamp i {
+    margin-right: 5px;
+}
+
+.time_stamp p {
+    margin: 0;
+    margin-left: 5px;
 }
